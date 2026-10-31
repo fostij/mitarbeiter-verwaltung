@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Login-Seite überarbeiten",
+    "description": "UI und UX der Login-Seite aktualisieren und modernisieren.",
+    "priority": "hoch",
+    "status": "offen",
+    "assignedTo": null
+  },
+  {
+    "id": 2,
+    "title": "Datenbank optimieren",
+    "description": "Langsame Datenbankabfragen identifizieren und optimieren.",
+    "priority": "hoch",
+    "status": "offen",
+    "assignedTo": null
+  },
+  {
+    "id": 3,
+    "title": "Dashboard erstellen",
+    "description": "Neues Admin-Dashboard mit Statistiken und Diagrammen entwickeln.",
+    "priority": "mittel",
+    "status": "offen",
+    "assignedTo": null
+  },
+  {
+    "id": 4,
+    "title": "API-Dokumentation schreiben",
+    "description": "Vollständige Dokumentation aller REST-API-Endpunkte erstellen.",
+    "priority": "niedrig",
+    "status": "offen",
+    "assignedTo": null
+  },
+  {
+    "id": 5,
+    "title": "Mobile Ansicht anpassen",
+    "description": "Responsive Design für alle Seiten der Anwendung sicherstellen.",
+    "priority": "mittel",
+    "status": "offen",
+    "assignedTo": null
+  },
+  {
+    "id": 6,
+    "title": "Unit Tests schreiben",
+    "description": "Testabdeckung für alle kritischen Komponenten auf 80% erhöhen.",
+    "priority": "mittel",
+    "status": "offen",
+    "assignedTo": null
+  }
+]
