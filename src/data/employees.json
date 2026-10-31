@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Anna Müller",
+    "role": "Entwicklerin",
+    "department": "IT",
+    "email": "a.mueller@firma.de",
+    "phone": "+49 511 1234567",
+    "status": "aktiv"
+  },
+  {
+    "id": 2,
+    "name": "Thomas Schmidt",
+    "role": "Designer",
+    "department": "Design",
+    "email": "t.schmidt@firma.de",
+    "phone": "+49 511 2345678",
+    "status": "aktiv"
+  },
+  {
+    "id": 3,
+    "name": "Laura Becker",
+    "role": "Projektmanagerin",
+    "department": "Management",
+    "email": "l.becker@firma.de",
+    "phone": "+49 511 3456789",
+    "status": "aktiv"
+  },
+  {
+    "id": 4,
+    "name": "Markus Weber",
+    "role": "Backend-Entwickler",
+    "department": "IT",
+    "email": "m.weber@firma.de",
+    "phone": "+49 511 4567890",
+    "status": "inaktiv"
+  },
+  {
+    "id": 5,
+    "name": "Sophie Klein",
+    "role": "UX Designerin",
+    "department": "Design",
+    "email": "s.klein@firma.de",
+    "phone": "+49 511 5678901",
+    "status": "aktiv"
+  },
+  {
+    "id": 6,
+    "name": "Felix Wagner",
+    "role": "DevOps Engineer",
+    "department": "IT",
+    "email": "f.wagner@firma.de",
+    "phone": "+49 511 6789012",
+    "status": "aktiv"
+  },
+  {
+    "id": 7,
+    "name": "Julia Hoffmann",
+    "role": "HR Managerin",
+    "department": "HR",
+    "email": "j.hoffmann@firma.de",
+    "phone": "+49 511 7890123",
+    "status": "aktiv"
+  },
+  {
+    "id": 8,
+    "name": "David Schäfer",
+    "role": "Frontend-Entwickler",
+    "department": "IT",
+    "email": "d.schaefer@firma.de",
+    "phone": "+49 511 8901234",
+    "status": "inaktiv"
+  }
+]
