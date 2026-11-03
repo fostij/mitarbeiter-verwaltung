@@ -1,0 +1,134 @@
+.card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px var(--color-shadow);
+  transform: translateY(-2px);
+}
+
+/* Header */
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+/* Prioritäts-Badge */
+.card__priority {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.priority--hoch    { background-color: #fee2e2; color: #ef4444; }
+.priority--mittel  { background-color: var(--color-status-in-bearbeitung-bg); color: var(--color-status-in-bearbeitung); }
+.priority--niedrig { background-color: var(--color-status-erledigt-bg); color: var(--color-status-erledigt); }
+
+/* Status-Badge */
+.card__status {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.status--offen         { background-color: var(--color-status-offen-bg);          color: var(--color-status-offen);          }
+.status--inBearbeitung { background-color: var(--color-status-in-bearbeitung-bg); color: var(--color-status-in-bearbeitung); }
+.status--erledigt      { background-color: var(--color-status-erledigt-bg);       color: var(--color-status-erledigt);       }
+
+/* Inhalt */
+.card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+}
+
+.card__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.card__description {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* Zugewiesener Mitarbeiter */
+.card__assignee {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background-color: var(--color-bg-subtle);
+  border-radius: var(--radius-md);
+}
+
+.card__assignee__icon  { color: var(--color-text-muted); flex-shrink: 0; }
+.card__assignee__name  { font-size: 0.85rem; font-weight: 500; color: var(--color-text-secondary); }
+.card__assignee__empty { font-size: 0.85rem; color: var(--color-text-muted); font-style: italic; }
+
+/* Aktionen */
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Mitarbeiter-Auswahl Dropdown */
+.card__select {
+  flex: 1;
+  padding: 8px var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-surface);
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+
+.card__select:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+/* Löschen-Button */
+.card__btn--danger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  background-color: #fee2e2;
+  color: #ef4444;
+  border: none;
+  margin-left: auto;
+  transition: background-color var(--transition);
+}
+
+.card__btn--danger:hover {
+  background-color: #fecaca;
+}

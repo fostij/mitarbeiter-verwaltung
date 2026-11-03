@@ -1,0 +1,152 @@
+.card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.card:hover {
+  box-shadow: 0 4px 20px var(--color-shadow);
+  transform: translateY(-2px);
+}
+
+/* Avatar */
+.card__avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background-color: var(--color-brand);
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Informationen */
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.card__name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.card__role {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+/* Status-Badge */
+.card__status {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.card__status--aktiv {
+  background-color: var(--color-status-erledigt-bg);
+  color: var(--color-status-erledigt);
+}
+
+.card__status--inaktiv {
+  background-color: #f3f4f6;
+  color: var(--color-text-muted);
+}
+
+/* Kontakte */
+.card__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.card__contact {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition);
+}
+
+.card__contact:hover {
+  color: var(--color-brand);
+}
+
+/* Abteilung */
+.card__department {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--color-text-on-dark);
+  background-color: var(--color-brand-dark);
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  width: fit-content;
+}
+
+/* Aktionen */
+.card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: auto;
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-border);
+}
+
+.card__btn--secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.card__btn--secondary:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}
+
+.card__btn--danger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  background-color: #fee2e2;
+  color: #ef4444;
+  border: none;
+  transition: background-color var(--transition);
+}
+
+.card__btn--danger:hover {
+  background-color: #fecaca;
+}
+
+.card__confirm {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #ef4444;
+  margin-right: auto;
+}

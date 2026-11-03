@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+/* CSS-Variablen — Design Tokens */
+
+:root {
+  /* Hintergrundfarben */
+  --color-bg-primary:  #23272f;
+  --color-bg-surface:  #ffffff;
+  --color-bg-subtle:   #f6f7f9;
+
+  /* Markenfarben */
+  --color-brand:       #149eca;
+  --color-brand-hover: #0e7fab;
+  --color-brand-dark:  #23272f;
+
+  /* Textfarben */
+  --color-text-primary:   #23272f;
+  --color-text-secondary: #404756;
+  --color-text-muted:     #6b7280;
+  --color-text-on-dark:   #f6f7f9;
+
+  /* Statusfarben für Aufgaben */
+  --color-status-offen:             #149eca;
+  --color-status-offen-bg:          #e8f6fc;
+  --color-status-in-bearbeitung:    #f59e0b;
+  --color-status-in-bearbeitung-bg: #fef3c7;
+  --color-status-erledigt:          #10b981;
+  --color-status-erledigt-bg:       #d1fae5;
+
+  /* UI-Elemente */
+  --color-border:  #e5e7eb;
+  --color-shadow:  rgba(0, 0, 0, 0.08);
+
+  /* Abrundungen */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-full: 999px;
+
+  /* Abstände */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+
+  /* Schrift */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Übergänge */
+  --transition: 0.2s ease;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-sans);
+  border: none;
+  background: none;
+}
+
+input,
+select,
+textarea {
+  font-family: var(--font-sans);
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Globale Button-Stile — für Aufgaben-Aktionen */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 8px var(--space-md);
+  background-color: var(--color-brand-dark);
+  color: var(--color-text-on-dark);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-brand);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 8px var(--space-md);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+}
+
+.btn-success {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 8px var(--space-md);
+  background-color: var(--color-status-erledigt-bg);
+  color: var(--color-status-erledigt);
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-success:hover {
+  background-color: #a7f3d0;
+}
