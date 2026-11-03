@@ -91,7 +91,7 @@ src/
 
 ```bash
 # Repository klonen
-git clone https://github.com/YOUR_USERNAME/mitarbeiter-verwaltung.git
+git clone https://github.com/fostij/mitarbeiter-verwaltung.git
 cd mitarbeiter-verwaltung
 
 # Abhängigkeiten installieren
