@@ -149,5 +149,4 @@ Jeder Komponent hat eine eigene `.module.css`-Datei im selben Ordner. Stile sind
 
 **Oleh Fostii**
 Hochschule Hannover — Fakultät III, Medien, Information und Design
-Dozent: 
 App-Entwicklung — React-Kurs, 2026
